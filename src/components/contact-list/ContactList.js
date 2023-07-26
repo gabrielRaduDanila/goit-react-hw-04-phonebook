@@ -9,7 +9,6 @@ const findFilteredContacts = (contacts, filter) => {
 };
 
 const ContactList = ({ filter, contacts, setContacts }) => {
-  console.log(filter);
   const contactsToDisplay = filter
     ? findFilteredContacts(contacts, filter)
     : contacts;
