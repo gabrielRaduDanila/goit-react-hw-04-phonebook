@@ -1,10 +1,10 @@
 import './Filter.css';
 
-const Filter = ({ addFilterValue }) => {
+const Filter = ({ setFilter }) => {
   const handleChange = e => {
     const searchInput = e.target;
     const typedName = searchInput.value.trim();
-    addFilterValue(typedName);
+    setFilter(typedName);
   };
 
   return (
