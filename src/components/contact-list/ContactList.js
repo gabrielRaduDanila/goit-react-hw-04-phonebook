@@ -18,7 +18,6 @@ const ContactList = ({ filter, contacts, setContacts }) => {
       const otherContact = contacts.filter(
         contact => !contactsToDisplay.some(cont => contact.id === cont.id)
       );
-      console.log(otherContact);
       const clickedBtn = e.target;
       const id = clickedBtn.id;
       const newContacts = contactsToDisplay.filter(
